@@ -52,6 +52,4 @@
     "@iconify/react": "^3.2.2"
   },
   "proxy": "https://pos-retailapp.herokuapp.com/"
-
-  
 }
