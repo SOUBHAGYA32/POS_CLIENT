@@ -27,7 +27,7 @@ function Billpage() {
   const getAllBills = () => {
     dispatch({ type: "showLoading" });
     axios
-      .get("/api/v1/bill/get-all-bills", config)
+      .get("https://pos-retailapp.herokuapp.com/api/v1/bill/get-all-bills", config)
       .then((response) => {
         dispatch({ type: "hideLoading" });
         const data = response.data;

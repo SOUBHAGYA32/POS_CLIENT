@@ -27,7 +27,7 @@ function Itempage() {
     try {
       dispatch({ type: "showLoading" });
       await axios
-        .get("/api/v1/item/getall-items", config)
+        .get("https://pos-retailapp.herokuapp.com/api/v1/item/getall-items", config)
         .then((res) => {
           console.log(res.data.items);
           setItemsData(res.data.items);
@@ -51,7 +51,7 @@ function Itempage() {
     try {
       dispatch({ type: "showLoading" });
       await axios
-        .post("/api/v1/item/delete-item", { itemId: record._id }, config)
+        .post("https://pos-retailapp.herokuapp.com/api/v1/item/delete-item", { itemId: record._id }, config)
         .then((res) => {
           dispatch({ type: "hideLoading" });
           message.success("Item deleted successdully");
@@ -110,7 +110,7 @@ function Itempage() {
     dispatch({ type: "showLoading" });
     if (editingItem === null) {
       await axios
-        .post("/api/v1/item/add-item", values, config)
+        .post("https://pos-retailapp.herokuapp.com/api/v1/item/add-item", values, config)
         .then((res) => {
           dispatch({ type: "hideLoading" });
           message.success("Item added Successfully😀");
@@ -125,7 +125,7 @@ function Itempage() {
         });
     } else {
       await axios
-        .post("/api/v1/item/edit-item", { ...values, itemId: editingItem._id }, config)
+        .post("https://pos-retailapp.herokuapp.com/api/v1/item/edit-item", { ...values, itemId: editingItem._id }, config)
         .then((res) => {
           dispatch({ type: "hideLoading" });
           message.success("Item edited successfully");

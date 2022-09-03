@@ -106,7 +106,7 @@ function Cartpage() {
       userId: JSON.parse(localStorage.getItem("pos-user"))._id,
     };
     axios
-      .post("/api/v1/bill/charge-bill", reqObject,config)
+      .post("https://pos-retailapp.herokuapp.com/api/v1/bill/charge-bill", reqObject,config)
       .then(() => {
         message.success("Bill Charged Successfully");
         navigate("/bills");

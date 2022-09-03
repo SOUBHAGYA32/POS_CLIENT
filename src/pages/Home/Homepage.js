@@ -26,7 +26,7 @@ function Homepage() {
   const getAllItems = () => {
     dispatch({ type: "showLoading" });
     axios
-      .get("/api/v1/item/getall-items", config)
+      .get("https://pos-retailapp.herokuapp.com/api/v1/item/getall-items", config)
       .then((response) => {
         dispatch({ type: "hideLoading" });
         setItemsData(response.data.items);
@@ -40,7 +40,7 @@ function Homepage() {
   const userDetails = async ()=>{
     const email = posuser.email;
     try {
-      await axios.post("/api/v1/auth/userdetails",{email}).then((res)=>{
+      await axios.post("https://pos-retailapp.herokuapp.com/api/v1/auth/userdetails",{email}).then((res)=>{
        console.log(res.data.user);
        localStorage.setItem("plan", res.data.user.plan);
       }).catch((err)=>{

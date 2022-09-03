@@ -47,7 +47,7 @@ function Planpage() {
     try {
       setLoadings(true);
       await axios
-        .post("/api/v1/auth/create-subscription", {
+        .post("https://pos-retailapp.herokuapp.com/api/v1/auth/create-subscription", {
           headers: {
             "Content-Type": "application/json",
           },

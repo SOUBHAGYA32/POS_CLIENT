@@ -40,7 +40,7 @@ function Loginpage() {
         dispatch({ type: "showLoading" });
         setSloading(true);
         axios
-          .post("/api/v1/auth/login", userData)
+          .post("https://pos-retailapp.herokuapp.com/api/v1/auth/login", userData)
           .then((res) => {
             console.log(res.data);
             dispatch({ type: "hideLoading" });

@@ -26,7 +26,7 @@ function Account() {
   const custApi = async () => {
     try {
       await axios
-        .get("/api/v1/bill/get-all-bills", config)
+        .get("https://pos-retailapp.herokuapp.com/api/v1/bill/get-all-bills", config)
         .then((res) => {
           setCustomerlength(res.data.length);
         })
@@ -41,7 +41,7 @@ function Account() {
   const getProduct = async () => {
     try {
       await axios
-        .get("/api/v1/item/getall-items", config)
+        .get("https://pos-retailapp.herokuapp.com/api/v1/item/getall-items", config)
         .then((res) => {
           setItemlength(res.data.items.length);
         })
@@ -55,7 +55,7 @@ function Account() {
   const purchaseItems = async () => {
     try {
       await axios
-        .get("/api/v1/bill/purchase", config)
+        .get("https://pos-retailapp.herokuapp.com/api/v1/bill/purchase", config)
         .then((res) => {
           setSaleitem(res.data.cart);
         })
@@ -69,7 +69,7 @@ function Account() {
   const userDetails = async ()=>{
     const email = posuser.email;
     try {
-      await axios.post("/api/v1/auth/userdetails",{email}).then((res)=>{
+      await axios.post("https://pos-retailapp.herokuapp.com/api/v1/auth/userdetails",{email}).then((res)=>{
        console.log(res.data.user);
        setPlan(res.data.user.plan);
       }).catch((err)=>{
@@ -91,7 +91,7 @@ function Account() {
     const customer = posuser.billingID;
     setPlanload(true);
     try {
-      await axios.post("/api/v1/auth/billing",{
+      await axios.post("https://pos-retailapp.herokuapp.com/api/v1/auth/billing",{
         headers: {
           "Content-Type": "application/json",
         },
