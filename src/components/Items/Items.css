@@ -1,0 +1,32 @@
+.itemsbodySec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.itemName {
+    justify-content: center;
+    display : flex;
+    width: 180px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+}
+
+.priceItm {
+    margin: 0px;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.699);
+}
+.addTocart {
+    width: auto !important;
+    font-size: 15px !important;
+}

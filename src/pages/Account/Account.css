@@ -1,0 +1,91 @@
+.accountHeader {
+    padding: 0px;
+}
+
+.ant-divider-inner-text {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dcard {
+    width: 18rem;
+    height: 10em;
+    overflow: hidden;
+}
+
+.customer {
+    background-color: #5CB85C;
+}
+
+.product {
+    background-color: #D9534F;
+}
+
+.purchase {
+    background-color: #5BC0DE;
+}
+
+.stock {
+    background-color: #F0AD4E;
+}
+
+.cardHead {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.dcardBody  {
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.rotate {
+    color: rgba(20, 20, 20, 0.15);
+    position: absolute;
+    left: 0;
+    left: auto;
+    right: -5px;
+    bottom: 0;
+    display: block;
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    transform: rotate(-44deg);
+}
+.ant-ribbon-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+.updateBtn {
+    font-size: 20px;
+    font-weight: bold;
+    height: 2em;
+}
+.ant-ribbon-text {
+    text-transform: uppercase;
+}
+.ant-card-meta-title {
+    text-transform: capitalize;
+}
+@media (max-width: 576px) {
+    .ant-ribbon-wrapper {
+        width: auto;
+    }
+    .accountHeader h2 {
+        font-size: 25px;
+    }
+}

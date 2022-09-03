@@ -1,0 +1,40 @@
+.leftcontainer {
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background: var(--primary-nav);
+    height: 100vh;
+}
+
+.rightregistercontainer {
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    background: #FFFFFF;
+}
+.registerForm {
+    position: relative;
+    top: 8%;
+}
+.registerInputForm {
+    width: 100%;
+}
+.nameSec {
+    display: flex;
+}
+.form-group {
+    padding-right: 10px;
+}
+.loaderClass {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 576px) {
+    .leftcontainer {
+        display: none;
+    }
+    .rightregistercontainer {
+        overflow-y: scroll;
+    }
+}

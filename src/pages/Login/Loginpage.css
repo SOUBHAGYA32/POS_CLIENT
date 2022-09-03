@@ -1,0 +1,109 @@
+
+.leftcontainer {
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    background: var(--primary-nav);
+    height: 100vh;
+}
+.rightcontainer {
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    background: #FFFFFF;
+}
+.formLogin {
+    position: relative;
+    overflow: hidden;
+    top: 20%;
+}
+.loginHead {
+    padding-bottom: 20px;
+}
+.loginHead h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.socialSignin {
+    display: flex;
+}
+.googleSign {
+    background: #1A73E8;
+}
+.googleSign .googleIcon {
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.googleSign span {
+    padding-left: 11px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600
+}
+.facebookSignin {
+    margin-left: 10px;
+    background-color: #F2F2F2;
+}
+.formLogin hr {
+    width: 100%;
+}
+
+.inputSignin {
+    width: 100%;
+}
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 34, 34);
+}
+.loginBtn {
+    margin-top: 20px;
+    background-color: var(--primary-nav);
+    /* width: 30%; */
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+.loginBtn:hover {
+    color: #FFFFFF;
+}
+.not_account {
+    font-size: 15px;
+    padding-top: 20px;
+}
+.signup__link {
+    padding-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.signup__link:hover {
+    text-decoration: none !important;
+}
+.loaderClass {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 576px) { 
+    .leftcontainer {
+        display: none;
+    }
+    .formLogin {
+        top: 12% !important;
+    }
+    .loginBtn {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 35%;
+    }
+    .not_account {
+        text-align: center;
+    }
+    .socialSignin {
+        justify-content: center !important;
+    }
+    .loginHead h1 {
+        text-align: center;
+    }
+ }

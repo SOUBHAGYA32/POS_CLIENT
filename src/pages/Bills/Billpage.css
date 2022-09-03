@@ -1,0 +1,19 @@
+
+.bill-header{
+    border-bottom: 2px dotted rgb(77, 76, 76);
+  }
+  .bill-model h1{
+    font-size: 30px;
+  }
+  .bill-model p{
+    margin-top: 0;
+    margin-bottom: 0 !important;
+  
+  }
+  .dotted-border{
+    margin: 5px 0;
+    border-bottom: 2px dotted rgb(77, 76, 76);
+  }
+  .bill-model h2{
+    margin-bottom: 0 !important;
+  }

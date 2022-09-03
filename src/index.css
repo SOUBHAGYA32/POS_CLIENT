@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+:root {
+  --primary-nav: #00152B;
+  --primary-button: #008608;
+  --primary-card: #F0F2F6;
+  --primary-btn: #0C7683;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #FFFFFF;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+input::placeholder {
+  font-size: 0.9rem;
+}
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+
+button,
+a {
+    cursor: pointer; 
+    text-decoration: none;
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+.form-control {
+  padding: 1.3rem 0.75rem !important;
+  font-size: 1.2rem !important;
+}
+::placeholder {
+  color: #00152B !important;
+  opacity: 1;
+}
+.form-control::-webkit-input-placeholder {
+  color: #00152B;
+}
+.form-control::-moz-placeholder {
+  color: #00152B;
+}
+.form-control:-ms-input-placeholder {
+  color: #00152B;
+}
+.form-control::placeholder {
+  color: #00152B;
+}
+.form-control {
+  border: 2px solid;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  box-shadow:  none !important;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.spinner{
+  z-index: 10;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.spinner-border{
+  height: 100px;
+  width: 100px;
+}

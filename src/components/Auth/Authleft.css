@@ -1,0 +1,15 @@
+.left_bar {
+    position: relative;
+    top: 40%;
+}
+.left__text h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+}
+.left__text p {
+    text-transform: capitalize;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
